@@ -151,7 +151,7 @@ const Dialog: React.FC<DialogProps> = ({
       id={id ?? 'dialog'}
       open={isOpen}
       className={clsx(
-        'modal sm:min-w-90 z-50 h-full w-full !items-start !bg-transparent sm:w-full sm:!items-center',
+        'modal sm:min-w-90 z-50 h-full w-full items-start! bg-transparent! sm:w-full sm:items-center!',
         className,
       )}
       dir={isRtl ? 'rtl' : undefined}
@@ -198,7 +198,7 @@ const Dialog: React.FC<DialogProps> = ({
                 tabIndex={-1}
                 onClick={onClose}
                 className={
-                  'btn btn-ghost btn-circle flex h-8 min-h-8 w-8 hover:bg-transparent focus:outline-none sm:hidden'
+                  'btn btn-ghost btn-circle flex h-8 min-h-8 w-8 hover:bg-transparent focus:outline-hidden sm:hidden'
                 }
               >
                 {isRtl ? (
@@ -214,7 +214,7 @@ const Dialog: React.FC<DialogProps> = ({
                 tabIndex={-1}
                 onClick={onClose}
                 className={
-                  'bg-base-300/65 btn btn-ghost btn-circle ml-auto hidden h-6 min-h-6 w-6 focus:outline-none sm:flex'
+                  'bg-base-300/65 btn btn-ghost btn-circle ml-auto hidden h-6 min-h-6 w-6 focus:outline-hidden sm:flex'
                 }
               >
                 <svg
@@ -235,7 +235,7 @@ const Dialog: React.FC<DialogProps> = ({
 
         <div
           className={clsx(
-            'text-base-content my-2 flex-grow overflow-y-auto px-6 sm:px-[10%]',
+            'text-base-content my-2 grow overflow-y-auto px-6 sm:px-[10%]',
             contentClassName,
           )}
         >

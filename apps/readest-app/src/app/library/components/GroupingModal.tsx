@@ -180,7 +180,7 @@ const GroupingModal: React.FC<GroupingModalProps> = ({
                 if (e.key === 'Enter') handleConfirmCreateGroup();
                 e.stopPropagation();
               }}
-              className='input input-ghost w-full border-0 px-2 text-base !outline-none sm:text-sm'
+              className='input input-ghost w-full border-0 px-2 text-base outline-hidden! sm:text-sm'
             />
             <button
               className={clsx(

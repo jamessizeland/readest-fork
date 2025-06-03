@@ -112,7 +112,7 @@ const NoteEditor: React.FC<NoteEditorProps> = ({ onSave, onEdit }) => {
         <div className='relative w-full'>
           <textarea
             className={clsx(
-              'note-editor textarea textarea-ghost min-h-[1em] resize-none !outline-none',
+              'note-editor textarea textarea-ghost min-h-[1em] resize-none outline-hidden!',
               'inset-0 w-full rounded-none border-0 bg-transparent p-0',
               'content font-size-sm',
             )}

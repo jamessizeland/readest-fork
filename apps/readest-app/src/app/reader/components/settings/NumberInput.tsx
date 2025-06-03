@@ -75,7 +75,7 @@ const NumberInput: React.FC<NumberInputProps> = ({
           value={localValue}
           onChange={handleChange}
           onBlur={handleOnBlur}
-          className='input input-ghost settings-content text-base-content w-20 max-w-xs rounded border-0 bg-transparent px-3 py-1 text-right !outline-none'
+          className='input input-ghost settings-content text-base-content w-20 max-w-xs rounded-sm border-0 bg-transparent px-3 py-1 text-right outline-hidden!'
           onFocus={(e) => e.target.select()}
         />
         <button

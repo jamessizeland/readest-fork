@@ -111,7 +111,7 @@ const MiscPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
       {appService?.isMobileApp && (
         <div className='w-full'>
           <h2 className='mb-2 font-medium'>{_('Screen')}</h2>
-          <div className='card border-base-200 bg-base-100 border shadow'>
+          <div className='card border-base-200 bg-base-100 border shadow-sm'>
             <div className='divide-base-200 divide-y'>
               <div className='config-item'>
                 <span className=''>{_('Orientation')}</span>
@@ -152,13 +152,13 @@ const MiscPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Custom CSS')}</h2>
         <div
-          className={`card border-base-200 bg-base-100 border shadow ${error ? 'border-red-500' : ''}`}
+          className={`card border-base-200 bg-base-100 border shadow-sm ${error ? 'border-red-500' : ''}`}
         >
           <div className='relative p-1'>
             <textarea
               ref={textareaRef}
               className={clsx(
-                'textarea textarea-ghost h-48 w-full border-0 p-3 text-base !outline-none sm:text-sm',
+                'textarea textarea-ghost h-48 w-full border-0 p-3 text-base outline-hidden! sm:text-sm',
                 'placeholder:text-base-content/70',
               )}
               placeholder={_('Enter your custom CSS here...')}

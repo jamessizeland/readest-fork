@@ -73,7 +73,7 @@ export const AboutWindow = () => {
       isOpen={isOpen}
       title={_('About Readest')}
       onClose={handleClose}
-      boxClassName='sm:!w-96 sm:h-auto'
+      boxClassName='sm:w-96! sm:h-auto'
     >
       <div className='about-content flex h-full flex-col items-center justify-center'>
         <div className='flex flex-col items-center gap-2 px-8'>

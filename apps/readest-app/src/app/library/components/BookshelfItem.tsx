@@ -268,7 +268,7 @@ const BookshelfItem: React.FC<BookshelfItemProps> = ({
         }}
         {...handlers}
       >
-        <div className='flex-grow'>
+        <div className='grow'>
           {'format' in item ? (
             <BookItem
               mode={mode}

@@ -571,7 +571,7 @@ const LibraryPageContent = ({ searchParams }: { searchParams: ReadonlyURLSearchP
       ref={pageRef}
       className={clsx(
         'library-page bg-base-200 text-base-content flex select-none flex-col overflow-hidden',
-        appService?.isIOSApp ? 'h-[100vh]' : 'h-dvh',
+        appService?.isIOSApp ? 'h-screen' : 'h-dvh',
         appService?.hasRoundedWindow && 'rounded-window',
       )}
     >
@@ -595,7 +595,7 @@ const LibraryPageContent = ({ searchParams }: { searchParams: ReadonlyURLSearchP
           <div
             ref={containerRef}
             className={clsx(
-              'scroll-container drop-zone flex-grow overflow-y-auto',
+              'scroll-container drop-zone grow overflow-y-auto',
               appService?.hasSafeAreaInset && 'pt-[52px]',
               appService?.hasSafeAreaInset && 'pb-[calc(env(safe-area-inset-bottom))]',
               isDragging && 'drag-over',

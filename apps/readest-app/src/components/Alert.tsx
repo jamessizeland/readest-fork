@@ -10,7 +10,7 @@ const Alert: React.FC<{
 }> = ({ title, message, onCancel, onConfirm }) => {
   const _ = useTranslation();
   return (
-    <div className={clsx('z-[100] flex justify-center px-4')}>
+    <div className={clsx('z-100 flex justify-center px-4')}>
       <div
         role='alert'
         className={clsx(

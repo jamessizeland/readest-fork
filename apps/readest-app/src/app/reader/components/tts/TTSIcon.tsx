@@ -18,9 +18,9 @@ const TTSIcon: React.FC<TTSIconProps> = ({ isPlaying, ttsInited, onClick }) => {
       )}
       onClick={onClick}
     >
-      <div className='absolute inset-0 overflow-hidden rounded-full bg-gradient-to-r from-blue-500 via-emerald-500 to-violet-500'>
+      <div className='absolute inset-0 overflow-hidden rounded-full bg-linear-to-r from-blue-500 via-emerald-500 to-violet-500'>
         <div
-          className='absolute -inset-full bg-gradient-to-r from-blue-500 via-emerald-500 to-violet-500'
+          className='absolute -inset-full bg-linear-to-r from-blue-500 via-emerald-500 to-violet-500'
           style={{
             animation: isPlaying && ttsInited ? 'moveGradient 2s alternate infinite' : 'none',
           }}

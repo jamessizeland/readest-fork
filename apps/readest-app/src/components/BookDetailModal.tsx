@@ -112,12 +112,12 @@ const BookDetailModal = ({
         onClose={handleClose}
         bgClassName='sm:bg-black/50'
         boxClassName='sm:min-w-[480px] sm:max-w-[480px] sm:h-auto sm:max-h-[90%]'
-        contentClassName='!px-6 !py-2'
+        contentClassName='px-6! py-2!'
       >
         <div className='flex w-full select-text items-center justify-center'>
           <div className='relative w-full rounded-lg'>
             <div className='mb-6 me-4 flex h-32 items-start'>
-              <div className='me-10 aspect-[28/41] h-32 shadow-lg'>
+              <div className='me-10 aspect-28/41 h-32 shadow-lg'>
                 <BookCover mode='list' book={book} />
               </div>
               <div className='title-author flex h-32 flex-col justify-between'>

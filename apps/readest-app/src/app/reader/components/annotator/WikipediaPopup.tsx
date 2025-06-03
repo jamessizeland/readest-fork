@@ -111,7 +111,7 @@ const WikipediaPopup: React.FC<WikipediaPopupProps> = ({
         className='select-text'
       >
         <div className='text-base-content flex h-full flex-col pt-2'>
-          <main className='flex-grow overflow-y-auto px-2 font-sans'></main>
+          <main className='grow overflow-y-auto px-2 font-sans'></main>
           <footer className='mt-auto hidden data-[state=loaded]:block data-[state=error]:hidden data-[state=loading]:hidden'>
             <div className='flex items-center px-4 py-2 text-sm opacity-60'>
               Source: Wikipedia (CC BY-SA)

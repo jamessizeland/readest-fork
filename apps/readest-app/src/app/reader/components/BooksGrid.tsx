@@ -43,7 +43,7 @@ const BooksGrid: React.FC<BooksGridProps> = ({ bookKeys, onCloseBook }) => {
 
   return (
     <div
-      className={clsx('relative grid h-full flex-grow')}
+      className={clsx('relative grid h-full grow')}
       style={{
         gridTemplateColumns: gridTemplate.columns,
         gridTemplateRows: gridTemplate.rows,

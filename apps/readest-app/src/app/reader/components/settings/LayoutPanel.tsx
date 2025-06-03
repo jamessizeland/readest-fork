@@ -314,7 +314,7 @@ const LayoutPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
       {viewSettings.vertical && (
         <div className='w-full'>
           <h2 className='mb-2 font-medium'>{_('Border Frame')}</h2>
-          <div className='card bg-base-100 border-base-200 border shadow'>
+          <div className='card bg-base-100 border-base-200 border shadow-sm'>
             <div className='divide-base-200 divide-y'>
               <div className='config-item'>
                 <span className=''>{_('Double Border')}</span>
@@ -330,12 +330,12 @@ const LayoutPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
                 <span className=''>{_('Border Color')}</span>
                 <div className='flex gap-4'>
                   <button
-                    className={`btn btn-circle btn-sm bg-red-300 hover:bg-red-500 ${borderColor === 'red' ? 'btn-active !bg-red-500' : ''}`}
+                    className={`btn btn-circle btn-sm bg-red-300 hover:bg-red-500 ${borderColor === 'red' ? 'btn-active bg-red-500!' : ''}`}
                     onClick={() => setBorderColor('red')}
                   ></button>
 
                   <button
-                    className={`btn btn-circle btn-sm bg-black/50 hover:bg-black ${borderColor === 'black' ? 'btn-active !bg-black' : ''}`}
+                    className={`btn btn-circle btn-sm bg-black/50 hover:bg-black ${borderColor === 'black' ? 'btn-active bg-black!' : ''}`}
                     onClick={() => setBorderColor('black')}
                   ></button>
                 </div>
@@ -347,7 +347,7 @@ const LayoutPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Paragraph')}</h2>
-        <div className='card bg-base-100 border-base-200 border shadow'>
+        <div className='card bg-base-100 border-base-200 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <NumberInput
               label={_('Paragraph Margin')}
@@ -415,7 +415,7 @@ const LayoutPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Page')}</h2>
-        <div className='card bg-base-100 border-base-200 border shadow'>
+        <div className='card bg-base-100 border-base-200 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <NumberInput
               label={_('Vertical Margins (px)')}
@@ -467,7 +467,7 @@ const LayoutPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Header & Footer')}</h2>
-        <div className='card bg-base-100 border-base-200 border shadow'>
+        <div className='card bg-base-100 border-base-200 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <div className='config-item'>
               <span className=''>{_('Show Header')}</span>

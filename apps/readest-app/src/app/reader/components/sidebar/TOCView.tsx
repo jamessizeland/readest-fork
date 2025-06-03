@@ -59,7 +59,7 @@ const TOCItemView: React.FC<{
   }, [expandedItems, item.href]);
 
   return (
-    <li className='border-base-300 w-full border-b sm:border-none sm:pt-[1px]'>
+    <li className='border-base-300 w-full border-b sm:border-none sm:pt-px'>
       <span
         role='treeitem'
         tabIndex={-1}

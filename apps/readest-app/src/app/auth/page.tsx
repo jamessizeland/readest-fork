@@ -51,8 +51,8 @@ const ProviderLogin: React.FC<ProviderLoginProp> = ({ provider, handleSignIn, Ic
     <button
       onClick={() => handleSignIn(provider)}
       className={clsx(
-        'mb-2 flex w-64 items-center justify-center rounded border p-2.5',
-        'bg-base-100 border-base-300 hover:bg-base-200 shadow-sm transition',
+        'mb-2 flex w-64 items-center justify-center rounded-sm border p-2.5',
+        'bg-base-100 border-base-300 hover:bg-base-200 shadow-xs transition',
       )}
     >
       <Icon />

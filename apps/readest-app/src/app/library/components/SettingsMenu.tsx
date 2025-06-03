@@ -178,7 +178,7 @@ const SettingsMenu: React.FC<SettingsMenuProps> = ({ setIsDropdownOpen }) => {
               ? _('Logged in as {{userDisplayName}}', { userDisplayName })
               : _('Logged in')
           }
-          labelClass='!max-w-40'
+          labelClass='max-w-40!'
           Icon={
             avatarUrl ? (
               <UserAvatar url={avatarUrl} size={iconSize} DefaultIcon={PiUserCircleCheck} />

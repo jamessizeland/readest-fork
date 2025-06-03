@@ -176,7 +176,7 @@ const SideBar: React.FC<{
       <div
         className={clsx(
           'sidebar-container bg-base-200 z-20 flex min-w-60 select-none flex-col',
-          appService?.isIOSApp ? 'h-[100vh]' : 'h-full',
+          appService?.isIOSApp ? 'h-screen' : 'h-full',
           appService?.hasSafeAreaInset && 'pt-[env(safe-area-inset-top)]',
           appService?.hasRoundedWindow && 'rounded-window-top-left rounded-window-bottom-left',
           !isSideBarPinned && 'shadow-2xl',
@@ -204,7 +204,7 @@ const SideBar: React.FC<{
             }
           }
         `}</style>
-        <div className='flex-shrink-0'>
+        <div className='shrink-0'>
           {isMobile && (
             <div
               className='drag-handle flex h-10 w-full cursor-row-resize items-center justify-center'

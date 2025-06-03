@@ -251,7 +251,7 @@ const TTSPanel = ({
           <ul
             tabIndex={0}
             className={clsx(
-              'dropdown-content bgcolor-base-200 no-triangle menu menu-vertical rounded-box absolute right-0 z-[1] shadow',
+              'dropdown-content bgcolor-base-200 no-triangle menu menu-vertical rounded-box absolute right-0 z-1 shadow-sm',
               'mt-4 inline max-h-96 w-[200px] overflow-y-scroll',
             )}
           >
@@ -278,7 +278,7 @@ const TTSPanel = ({
           <ul
             tabIndex={0}
             className={clsx(
-              'dropdown-content bgcolor-base-200 no-triangle menu menu-vertical rounded-box absolute right-0 z-[1] shadow',
+              'dropdown-content bgcolor-base-200 no-triangle menu menu-vertical rounded-box absolute right-0 z-1 shadow-sm',
               'mt-4 inline max-h-96 w-[250px] overflow-y-scroll',
             )}
           >

@@ -195,7 +195,7 @@ const Notebook: React.FC = ({}) => {
         className={clsx(
           'notebook-container bg-base-200 right-0 z-20 flex min-w-60 select-none flex-col',
           'font-sans text-base font-normal sm:text-sm',
-          appService?.isIOSApp ? 'h-[100vh]' : 'h-full',
+          appService?.isIOSApp ? 'h-screen' : 'h-full',
           appService?.hasSafeAreaInset && 'pt-[env(safe-area-inset-top)]',
           appService?.hasRoundedWindow && 'rounded-window-top-right rounded-window-bottom-right',
           !isNotebookPinned && 'shadow-2xl',
@@ -219,7 +219,7 @@ const Notebook: React.FC = ({}) => {
           className='drag-bar absolute left-0 top-0 h-full w-0.5 cursor-col-resize'
           onMouseDown={handleDragStart}
         />
-        <div className='flex-shrink-0'>
+        <div className='shrink-0'>
           <NotebookHeader
             isPinned={isNotebookPinned}
             isSearchBarVisible={isSearchBarVisible}
@@ -240,7 +240,7 @@ const Notebook: React.FC = ({}) => {
             />
           </div>
         </div>
-        <div className='flex-grow overflow-y-auto px-3'>
+        <div className='grow overflow-y-auto px-3'>
           {isSearchBarVisible && searchResults && !hasSearchResults && hasAnyNotes && (
             <div className='flex h-32 items-center justify-center text-gray-500'>
               <p className='font-size-sm text-center'>{_('No notes match your search')}</p>
@@ -268,7 +268,7 @@ const Notebook: React.FC = ({}) => {
                   <div
                     className={clsx(
                       'collapse-title pe-8 text-sm font-medium',
-                      'h-[2.5rem] min-h-[2.5rem] p-[0.6rem]',
+                      'h-10 min-h-10 p-[0.6rem]',
                     )}
                     style={
                       {

@@ -89,7 +89,7 @@ const LangPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
     <div className={clsx('my-4 w-full space-y-6')}>
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Language')}</h2>
-        <div className='card border-base-200 bg-base-100 border shadow'>
+        <div className='card border-base-200 bg-base-100 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <div className='config-item'>
               <span className=''>{_('Interface Language')}</span>
@@ -98,7 +98,7 @@ const LangPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
                 selected={getCurrentUILangOption()}
                 onSelect={handleSelectUILang}
                 className='dropdown-bottom'
-                listClassName='!max-h-60'
+                listClassName='max-h-60!'
               />
             </div>
           </div>
@@ -107,7 +107,7 @@ const LangPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Translation')}</h2>
-        <div className='card border-base-200 bg-base-100 border shadow'>
+        <div className='card border-base-200 bg-base-100 border shadow-sm'>
           <div className='divide-base-200'>
             <div className='config-item'>
               <span className=''>{_('Enable Translation')}</span>
@@ -138,7 +138,7 @@ const LangPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
                 onSelect={handleSelectTargetLang}
                 disabled={!translationEnabled}
                 className='dropdown-top'
-                listClassName='!max-h-60'
+                listClassName='max-h-60!'
               />
             </div>
           </div>

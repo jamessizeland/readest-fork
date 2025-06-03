@@ -59,7 +59,7 @@ const BookItem: React.FC<BookItemProps> = ({
     >
       <div
         className={clsx(
-          'bg-base-100 relative flex aspect-[28/41] items-center justify-center overflow-hidden shadow-md',
+          'bg-base-100 relative flex aspect-28/41 items-center justify-center overflow-hidden shadow-md',
           mode === 'list' && 'min-w-20',
         )}
       >
@@ -72,7 +72,7 @@ const BookItem: React.FC<BookItemProps> = ({
             {selectedBooks.includes(book.hash) ? (
               <MdCheckCircle className='fill-blue-500' />
             ) : (
-              <MdCheckCircleOutline className='fill-gray-300 drop-shadow-sm' />
+              <MdCheckCircleOutline className='fill-gray-300 drop-shadow-xs' />
             )}
           </div>
         )}
@@ -115,7 +115,7 @@ const BookItem: React.FC<BookItemProps> = ({
                 onPointerLeave={(e) => stopEvent(e)}
                 onClick={() => showBookDetailsModal(book)}
               >
-                <div className='pt-[1px]'>
+                <div className='pt-px'>
                   <LiaInfoCircleSolid size={iconSize15} />
                 </div>
               </button>

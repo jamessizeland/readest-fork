@@ -70,7 +70,7 @@ const SidebarContent: React.FC<{
     <>
       <div
         className={clsx(
-          'sidebar-content flex min-h-0 flex-grow flex-col shadow-inner',
+          'sidebar-content flex min-h-0 grow flex-col shadow-inner',
           'font-sans text-base font-normal sm:text-sm',
         )}
       >
@@ -94,7 +94,7 @@ const SidebarContent: React.FC<{
       </div>
       <div
         className={clsx(
-          'flex-shrink-0',
+          'shrink-0',
           appService?.hasSafeAreaInset && 'pb-[calc(env(safe-area-inset-bottom)/2)]',
         )}
       >

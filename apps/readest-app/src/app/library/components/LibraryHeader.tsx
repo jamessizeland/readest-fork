@@ -148,7 +148,7 @@ const LibraryHeader: React.FC<LibraryHeaderProps> = ({
               className={clsx(
                 'input rounded-badge bg-base-300/50 h-9 w-full pl-10 pr-10 sm:h-7',
                 'font-sans text-sm font-light',
-                'border-none focus:outline-none focus:ring-0',
+                'border-none focus:outline-hidden focus:ring-0',
               )}
             />
           </div>

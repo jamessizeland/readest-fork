@@ -20,7 +20,7 @@ export default function Select({ value, onChange, options, className }: SelectPr
       onChange={onChange}
       className={clsx(
         'select h-8 min-h-8 rounded-md border-none text-end text-sm',
-        'bg-gray-600 text-white/75 focus:outline-none focus:ring-0',
+        'bg-gray-600 text-white/75 focus:outline-hidden focus:ring-0',
         className,
       )}
       style={{

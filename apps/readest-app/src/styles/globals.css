@@ -1,49 +1,68 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
-  border-radius: 10px;
-  scrollbar-gutter: auto !important;
-  overscroll-behavior: none;
+@config '../../tailwind.config.ts';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 }
 
-/* Fixes the scrollbar gutter issue for DaisyUI */
-/* https://github.com/saadeghi/daisyui/issues/3040#issuecomment-2250530354 */
-:root:has(
-    :is(
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@layer utilities {
+  :root {
+    border-radius: 10px;
+    scrollbar-gutter: auto !important;
+    overscroll-behavior: none;
+  }
+
+  /* Fixes the scrollbar gutter issue for DaisyUI */
+  /* https://github.com/saadeghi/daisyui/issues/3040#issuecomment-2250530354 */
+  :root:has(
+      :is(
         .modal-open,
         .modal:target,
         .modal-toggle:checked + .modal,
         .modal[open]
       )
-  ) {
-  scrollbar-gutter: unset !important;
-}
+    ) {
+    scrollbar-gutter: unset !important;
+  }
 
-html[data-page='default'] {
-  background: theme('colors.base-100');
-}
+  html[data-page='default'] {
+    background: var(--color-base-100);
+  }
 
-html[data-page='library'] {
-  background: theme('colors.base-200');
-}
+  html[data-page='library'] {
+    background: var(--color-base-200);
+  }
 
-html[data-page='reader'] {
-  background: theme('colors.base-100');
-}
+  html[data-page='reader'] {
+    background: var(--color-base-100);
+  }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
-  border-radius: 10px;
-  background-color: transparent;
-  cursor: default;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  body {
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+      Arial, sans-serif;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: default;
   }
 }
 
@@ -112,7 +131,7 @@ foliate-view {
 }
 
 .dropdown-content::before {
-  border-bottom: 12px solid theme('colors.base-100');
+  border-bottom: 12px solid var(--color-base-100);
   z-index: 1;
 }
 
@@ -123,10 +142,10 @@ foliate-view {
 }
 
 .dropdown-content.bgcolor-base-200 {
-  background-color: theme('colors.base-200');
+  background-color: var(--color-base-200);
 }
 .dropdown-content.bgcolor-base-200::before {
-  border-bottom: 12px solid theme('colors.base-200');
+  border-bottom: 12px solid var(--color-base-200);
   z-index: 1;
 }
 
@@ -300,7 +319,7 @@ foliate-view {
   transform: translate(-50%, -50%);
   z-index: 50;
   padding: 20px;
-  background-color: theme('colors.base-300');
+  background-color: var(--color-base-300);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   pointer-events: none;

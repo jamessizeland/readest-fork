@@ -27,7 +27,7 @@ const BookCard = ({ book }: { book: Book }) => {
         width={56}
         height={80}
         className={clsx(
-          'me-4 aspect-auto max-h-16 w-[15%] max-w-12 rounded-sm object-cover shadow-md',
+          'me-4 aspect-auto max-h-16 w-[15%] max-w-12 rounded-xs object-cover shadow-md',
           isDarkMode ? 'mix-blend-screen' : 'mix-blend-multiply',
         )}
         onError={(e) => {

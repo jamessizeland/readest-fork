@@ -93,7 +93,7 @@ const ControlPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
     <div className='my-4 w-full space-y-6'>
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Scroll')}</h2>
-        <div className='card border-base-200 bg-base-100 border shadow'>
+        <div className='card border-base-200 bg-base-100 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <div className='config-item'>
               <span className=''>{_('Scrolled Mode')}</span>
@@ -128,7 +128,7 @@ const ControlPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Click')}</h2>
-        <div className='card border-base-200 bg-base-100 border shadow'>
+        <div className='card border-base-200 bg-base-100 border shadow-sm'>
           <div className='divide-base-200'>
             <div className='config-item'>
               <span className=''>{_('Clicks for Page Flip')}</span>
@@ -166,7 +166,7 @@ const ControlPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Animation')}</h2>
-        <div className='card border-base-200 bg-base-100 border shadow'>
+        <div className='card border-base-200 bg-base-100 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <div className='config-item'>
               <span className=''>{_('Paging Animation')}</span>
@@ -183,9 +183,9 @@ const ControlPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Security')}</h2>
-        <div className='card border-base-200 bg-base-100 border shadow'>
+        <div className='card border-base-200 bg-base-100 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
-            <div className='config-item !h-16'>
+            <div className='config-item h-16!'>
               <div className='flex flex-col gap-1'>
                 <span className=''>{_('Allow JavaScript')}</span>
                 <span className='text-xs'>{_('Enable only if you trust the file.')}</span>

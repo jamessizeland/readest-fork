@@ -238,7 +238,7 @@ const FontPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Font Size')}</h2>
-        <div className='card border-base-200 border shadow'>
+        <div className='card border-base-200 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <NumberInput
               label={_('Default Font Size')}
@@ -260,7 +260,7 @@ const FontPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Font Weight')}</h2>
-        <div className='card border-base-200 border shadow'>
+        <div className='card border-base-200 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <NumberInput
               label={_('Font Weight')}
@@ -276,7 +276,7 @@ const FontPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Font Family')}</h2>
-        <div className='card border-base-200 border shadow'>
+        <div className='card border-base-200 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <div className='config-item'>
               <span className=''>{_('Default Font')}</span>
@@ -304,7 +304,7 @@ const FontPanel: React.FC<{ bookKey: string }> = ({ bookKey }) => {
 
       <div className='w-full'>
         <h2 className='mb-2 font-medium'>{_('Font Face')}</h2>
-        <div className='card border-base-200 border shadow'>
+        <div className='card border-base-200 border shadow-sm'>
           <div className='divide-base-200 divide-y'>
             <FontFace
               className='config-item-top'

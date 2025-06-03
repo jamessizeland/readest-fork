@@ -19,10 +19,10 @@ const GroupItem: React.FC<GroupItemProps> = ({ group, isSelectMode, selectedBook
         appService?.hasContextMenu ? 'cursor-pointer' : '',
       )}
     >
-      <div className='bg-base-100 relative flex aspect-[28/41] items-center justify-center overflow-hidden p-2 shadow-md'>
+      <div className='bg-base-100 relative flex aspect-28/41 items-center justify-center overflow-hidden p-2 shadow-md'>
         <div className='grid w-full grid-cols-2 grid-rows-2 gap-1 overflow-hidden'>
           {group.books.slice(0, 4).map((book) => (
-            <div key={book.hash} className='relative aspect-[28/41] h-full w-full'>
+            <div key={book.hash} className='relative aspect-28/41 h-full w-full'>
               <BookCover book={book} isPreview />
             </div>
           ))}
@@ -35,7 +35,7 @@ const GroupItem: React.FC<GroupItemProps> = ({ group, isSelectMode, selectedBook
             {selectedBooks.includes(group.id) ? (
               <MdCheckCircle className='fill-blue-500' />
             ) : (
-              <MdCheckCircleOutline className='fill-gray-300 drop-shadow-sm' />
+              <MdCheckCircleOutline className='fill-gray-300 drop-shadow-xs' />
             )}
           </div>
         )}

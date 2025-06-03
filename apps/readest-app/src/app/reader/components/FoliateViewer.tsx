@@ -248,7 +248,7 @@ const FoliateViewer: React.FC<{
     <>
       <div
         ref={containerRef}
-        className='foliate-viewer h-[100%] w-[100%]'
+        className='foliate-viewer h-full w-[100%]'
         {...mouseHandlers}
         {...touchHandlers}
       />

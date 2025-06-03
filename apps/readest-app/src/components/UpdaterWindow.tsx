@@ -278,7 +278,7 @@ export const UpdaterContent = ({ version }: { version?: string }) => {
             <Image src='/icon.png' alt='Logo' className='h-20 w-20' width={64} height={64} />
           </div>
 
-          <div className='text-base-content flex-grow text-sm'>
+          <div className='text-base-content grow text-sm'>
             <h2 className='mb-4 text-center font-bold sm:text-start'>
               {_('A new version of Readest is Available!')}
             </h2>
@@ -292,7 +292,7 @@ export const UpdaterContent = ({ version }: { version?: string }) => {
 
             <div className='flex w-full flex-row items-center justify-end gap-4'>
               {progress !== null && (
-                <div className='flex flex-grow flex-col'>
+                <div className='flex grow flex-col'>
                   <progress
                     className='progress my-1 h-4 w-full'
                     value={progress}
@@ -399,7 +399,7 @@ export const UpdaterWindow = () => {
       isOpen={isOpen}
       title={_('Software Update')}
       onClose={() => setIsOpen(false)}
-      boxClassName='sm:!w-[80%] sm:h-auto'
+      boxClassName='sm:w-[80%]! sm:h-auto'
     >
       <UpdaterContent version={newVersion ?? undefined} />
     </Dialog>

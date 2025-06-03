@@ -166,7 +166,7 @@ const WiktionaryPopup: React.FC<WiktionaryPopupProps> = ({
         className='select-text'
       >
         <div className='flex h-full flex-col'>
-          <main className='flex-grow overflow-y-auto p-4 font-sans' />
+          <main className='grow overflow-y-auto p-4 font-sans' />
           <footer className='mt-auto hidden data-[state=loaded]:block data-[state=error]:hidden data-[state=loading]:hidden'>
             <div className='flex items-center px-4 py-2 text-sm opacity-60'>
               Source: Wiktionary (CC BY-SA)

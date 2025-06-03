@@ -189,7 +189,7 @@ const ProfilePage = () => {
         <div className='bg-base-200 overflow-hidden rounded-lg p-2 shadow-md sm:p-6'>
           <div className='p-2 sm:p-6'>
             <div className='mb-8 flex flex-col items-center gap-x-6 gap-y-4 md:flex-row md:items-start'>
-              <div className='flex-shrink-0'>
+              <div className='shrink-0'>
                 {avatarUrl ? (
                   <UserAvatar
                     url={avatarUrl}
@@ -203,7 +203,7 @@ const ProfilePage = () => {
                 )}
               </div>
 
-              <div className='flex-grow text-center md:text-left'>
+              <div className='grow text-center md:text-left'>
                 <h2 className='text-base-content text-xl font-bold md:text-2xl'>{userFullName}</h2>
                 <p className='text-base-content/60'>{userEmail}</p>
                 <div className='mt-3'>

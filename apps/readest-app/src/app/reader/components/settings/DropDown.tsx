@@ -40,7 +40,7 @@ const DropDown: React.FC<DropDownProps> = ({
       <ul
         tabIndex={0}
         className={clsx(
-          'dropdown-content bgcolor-base-200 no-triangle menu rounded-box absolute z-[1] shadow',
+          'dropdown-content bgcolor-base-200 no-triangle menu rounded-box absolute z-1 shadow-sm',
           'menu-vertical right-[-32px] mt-2 inline max-h-80 w-44 overflow-y-scroll sm:right-0',
           listClassName,
         )}

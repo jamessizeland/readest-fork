@@ -49,7 +49,7 @@ const ThemeEditor: React.FC<ThemeEditorProps> = ({ customTheme, onSave, onDelete
     <div className='mb-2 mt-4'>
       <label className='mb-1 block text-sm font-medium'>{label}</label>
       <div
-        className='border-base-300 overflow-hidden rounded border p-2'
+        className='border-base-300 overflow-hidden rounded-sm border p-2'
         style={{
           backgroundColor: backgroundColor,
           color: textColor,
@@ -127,7 +127,7 @@ const ThemeEditor: React.FC<ThemeEditorProps> = ({ customTheme, onSave, onDelete
             type='text'
             value={themeName}
             onChange={(e) => setThemeName(e.target.value)}
-            className='bg-base-100 text-base-content border-base-200 w-[calc(50%-12px)] rounded border p-2 text-sm'
+            className='bg-base-100 text-base-content border-base-200 w-[calc(50%-12px)] rounded-sm border p-2 text-sm'
           />
         </div>
       </div>
