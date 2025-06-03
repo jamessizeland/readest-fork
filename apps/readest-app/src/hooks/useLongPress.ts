@@ -30,7 +30,7 @@ export const useLongPress = ({
   moveThreshold = 10,
 }: UseLongPressOptions): UseLongPressResult => {
   const [pressing, setPressing] = useState(false);
-  const timerRef = useRef<NodeJS.Timeout>();
+  const timerRef = useRef<NodeJS.Timeout>(null);
   const startPosRef = useRef<{ x: number; y: number } | null>(null);
   const pointerId = useRef<number | null>(null);
   const isLongPressTriggered = useRef(false);
@@ -40,7 +40,7 @@ export const useLongPress = ({
     isLongPressTriggered.current = false;
     startPosRef.current = null;
     pointerId.current = null;
-    clearTimeout(timerRef.current);
+    if (timerRef.current) clearTimeout(timerRef.current);
   }, []);
 
   const handlePointerDown = useCallback(
@@ -120,7 +120,7 @@ export const useLongPress = ({
 
   useEffect(() => {
     return () => {
-      clearTimeout(timerRef.current);
+      if (timerRef.current) clearTimeout(timerRef.current);
     };
   }, []);
 

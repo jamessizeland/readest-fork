@@ -34,8 +34,8 @@ export const viewPagination = (
 
 export const usePagination = (
   bookKey: string,
-  viewRef: React.MutableRefObject<FoliateView | null>,
-  containerRef: React.RefObject<HTMLDivElement>,
+  viewRef: React.RefObject<FoliateView | null>,
+  containerRef: React.RefObject<HTMLDivElement | null>,
 ) => {
   const { appService } = useEnv();
   const { getViewSettings } = useReaderStore();
